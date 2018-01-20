@@ -86,21 +86,11 @@ p{
 
 .form-wrapper{
   background: #11B5E4;
-  display: flex;
-  /* justify-content: space-around; */
-  align-items: center;
-  flex-direction: column;
-
 }
 
 .form-header{
   background: #0CAADC;
   color: #fff;
-  
-}
-
-.form-container{
-  width: 20%;
   
 }
 
@@ -115,7 +105,7 @@ p{
 
 .form-row label{
   font-size: .8em;
-  text-align: left;
+  
 }
 
 
