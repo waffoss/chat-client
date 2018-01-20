@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1481BA;
+  color:#fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+ 
+}
+
+
+h1, h2, h3{
+  margin: 0;
+  padding: 1em 0;
+}
+
+p{
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn{
+  display: inline-block;
+  background: #001021;
+  color: #0CAADC;
+  text-decoration: none;
+  padding: 1em 2em;
+  border:1px solid #11B5E4;
+  margin: .5em .5em;
+}
+
+.btn:hover{
+  background: #0CAADC;
+  color: #001021;
+}
+
+#showcase{
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image{
+  position: absolute;
+  background: #001021 url('./static/images/bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1{
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+
+#showcase .content-wrap,
+#section-a .content-wrap{
+    padding: 0 1.5em;
+}
+
+#section-a{
+  background: #11B5E4;
+  color: #001021;
+  padding-bottom: 2em;
+}
+
+#section-b{
+  background: #0CAADC;
+  color: #001021;
+  padding: 2em;
+
+}
+
+#main-footer{
+  padding: 2em;
+  background: #001021;
+  color: #11B5E4;
+  text-align: center;
+}
+
+.form-wrapper{
+  background: #11B5E4;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.form-header{
+  background: #0CAADC;
+  color: #fff;
+  
+}
+
+.form-container{
+  width: 20%;
+  
+}
+
+
+.form-input input{
+ margin: .5em;
+ margin-top: 1em;
+ padding: .5em;
+ border: 0;
+ border-radius: .2em;
+}
+
+.form-row label{
+  font-size: .8em;
+  text-align: left;
+}
+
+
+@media(min-width:900px){
+  .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+
+  }
+
+  .content-wrap{
+       grid-column: 2/4;
+   }
+
+   .box, #main-footer div{
+       grid-column: 2/4;
+   }
+
+   .auth-form .form-wrapper{
+     grid-column: 2/4;
+   }
+
+   .form-wrapper{
+    margin-top: 10em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    box-shadow: 2px 4px 7px #001021;
+   }
+
+   .form-header{
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+   }
+
+}
